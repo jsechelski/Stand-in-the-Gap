@@ -1,0 +1,387 @@
+<!DOCTYPE html><html><head>
+    <title>Backnode</title>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- leave this for stats -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <!-- Normalize -->
+    <link href="https://editor.silex.me/static/2.7/normalize.css" rel="stylesheet" data-silex-static="">
+    <!-- Silex style -->
+    <link href="https://editor.silex.me/static/2.7/front-end.css" rel="stylesheet" data-silex-static="">
+
+    <style type="text/css" class="silex-style">.title,
+.heading1,
+.heading2,
+.heading3,
+.normal {color: #666666; font-family: verdana, arial; margin: 0;}.title {font-size: 45px;}body {padding: 0;}.editable-style.full-width {width: 2000px; left: 0;}.editable-style.centered {left: 50%; width: 980px; margin-left: -490px; position: absolute;}.editable-style.right-aligned {right: 0; left: auto;}.silex-runtime .editable-style.full-width {width: 100%;}.normal,
+.heading1 {font-weight: normal; color: white;}.heading2 {font-weight: normal; color: white;}.page-content .heading1 {font-size: 36px; font-family: sans-serif; color: #3D3D3D; font-weight: normal;}.page-content .normal {color: #818181;}.nav div {color: white; font-family: sans-serif; font-size: 16px; font-weight: normal;}.nav a.page-link-active {font-weight: bold; border-bottom: 4px solid #34b399;}.editable-style.nav a:hover {text-decoration: initial;}body {padding-top: 0 !important;}</style>
+    <script type="text/javascript" class="silex-script"></script>
+
+    <style class="silex-inline-styles" type="text/css">.silex-id-1439555806958-90 {cursor: auto; background-color: rgb(255, 255, 255);}.silex-id-1484951384737-1 {top: 5px; left: 5px; background-image: url('../../../../../libs/templates/silex-templates/online-service/assets/background_header.jpg'); background-position: center right; min-width: 945px; background-size: cover; background-repeat: no-repeat; background-color: rgba(65,73,96,1); background-attachment: scroll;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951384737-1 {}}.silex-id-1484951384736-0 {min-height: 566px; background-color: transparent; width: 945px; top: 15px; left: 304px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951384736-0 {min-height: 302px; top: 168px; left: 12px; width: 445px;}}.silex-id-1439555803032-54 {width: 945px; top: 213px; left: 0px; background-color: transparent; min-height: 87px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555803032-54 {top: 61px; left: 11px; width: 423px; min-height: 52px;}}.silex-id-1439555803858-60 {width: 945px; top: 26px; left: -1px; background-color: transparent; min-height: 47px;}.silex-id-1439555803757-59 {width: 150px; top: 15px; left: 471px; background-color: transparent; min-height: 22px;}.silex-id-1439555803655-58 {width: 150px; top: 15px; left: 636px; background-color: transparent; min-height: 23px;}.silex-id-1439555803551-57 {width: 150px; top: 15px; left: 794px; background-color: transparent; min-height: 23px;}.silex-id-1535371935324-0 {width: 387px; min-height: 58px; top: -6px; left: 13px;}.silex-id-1439555803447-56 {width: 242px; top: 371px; left: 347px; background-color: rgb(43, 148, 126); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; min-height: 46px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555803447-56 {top: 496px; left: 11px; width: 423px; min-height: 46px;}}.silex-id-1439555803309-55 {width: 215px; top: 13px; left: 13px; background-color: transparent; min-height: 33px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555803309-55 {top: 13px; left: 104px; width: 215px; min-height: 20px;}}.silex-id-1439555805314-74 {width: 495.52px; top: 481px; left: 214px; min-height: 152px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555805314-74 {top: 697px; left: 11px; width: 423px; min-height: 123px;}}.silex-id-1492777224370-7 {width: 46px; min-height: 168px; background-color: transparent; top: 217px; left: 0px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1492777224370-7 {top: 0px; left: 178px; width: 113px; min-height: 95px;}}.silex-id-1484951794946-5 {top: 606px; left: 5px; background-color: rgba(103,37,62,1);}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951794946-5 {top: 535px; left: 0px;}}.silex-id-1484951794946-4 {min-height: 1489px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951794946-4 {min-height: 1689px;}}.silex-id-1439555805723-78 {width: 418px; top: 58px; left: 29px; background-color: transparent; min-height: 1287px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555805723-78 {top: 29px; left: 23px; width: 400px; min-height: 119px;}}.silex-id-1439555805416-75 {width: 487.309px; top: 59px; left: 457px; min-height: 303px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555805416-75 {top: 36px; left: 11px; width: 423px; min-height: 248px;}}.silex-id-1439555805622-77 {width: 242px; top: 394px; left: 564px; background-color: rgb(43, 148, 126); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; min-height: 46px;}.silex-id-1439555805518-76 {width: 215px; top: 12px; left: 14px; background-color: transparent; min-height: 20px;}.silex-id-1439555805211-73 {width: 448px; top: 484px; left: 477px; background-color: transparent; min-height: 309px;}.silex-id-1536710073242-1 {width: 439px; height: 403px; background-color: transparent; top: 1021px; left: 475px;}.silex-id-1439555805111-72 {width: 400px; top: 954px; left: 491px; background-color: transparent; min-height: 53px;}.silex-id-1484952760464-11 {min-height: 100px; top: 439px; left: 0px;}.silex-id-1484952760463-10 {min-height: 585px; background-color: transparent;}.silex-id-1484952775498-12 {min-height: 288px; width: 877px; top: 58px; left: 33px;}.silex-id-1484951945204-7 {top: 1996px; left: 5px; background-color: rgba(65,73,96,1);}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951945204-7 {top: 2052px; left: 0px;}}.silex-id-1484951945204-6 {min-height: 507px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484951945204-6 {min-height: 676px;}}.silex-id-1439555806543-86 {width: 980px; top: 32px; left: -17px; background-color: transparent; min-height: 57px;}.silex-id-1439555806441-85 {width: 302px; top: 259px; left: 17px; background-color: transparent; min-height: 116px;}.silex-id-1439555806339-84 {width: 141.518px; top: 147px; left: 416px; min-height: 79px;}.silex-id-1439555806236-83 {width: 91px; top: 137px; left: 116px; min-height: 91px;}.silex-id-1439555806030-81 {width: 265px; top: 258px; left: 360px; background-color: transparent; min-height: 190px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555806030-81 {top: 173px; left: 158px; width: 265px; min-height: 164px;}}.silex-id-1439555805927-80 {width: 302px; top: 257px; left: 647px; background-color: transparent; min-height: 190px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1439555805927-80 {top: 363px; left: 13px; width: 302px; min-height: 152px;}}.silex-id-1439555806132-82 {width: 90px; top: 140px; left: 732px; min-height: 78.6792px;}.silex-id-1484952021004-9 {top: 2426px; left: 5px; background-color: rgba(0,0,0,1);}.silex-id-1484952021003-8 {min-height: 131px; background-color: transparent;}.silex-id-1439555802805-52 {width: 855px; top: 61px; left: 43px; background-color: transparent; min-height: 55px;}</style>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/json" class="silex-json-styles">[{"desktop":{"silex-id-1439555806958-90":{"cursor":"auto","background-color":"rgb(255, 255, 255)"},"silex-id-1439555806749-88":{"width":"100px","top":"1698px","left":"0px","background-color":"rgb(65, 73, 96)","min-height":"501px"},"silex-id-1439555806648-87":{"width":"980px","top":"18px","left":"1002px","background-color":"transparent","min-height":"461px"},"silex-id-1439555806543-86":{"width":"980px","top":"32px","left":"-17px","background-color":"transparent","min-height":"57px"},"silex-id-1439555806441-85":{"width":"302px","top":"259px","left":"17px","background-color":"transparent","min-height":"116px"},"silex-id-1439555806339-84":{"width":"141.518px","top":"147px","left":"416px","min-height":"79px"},"silex-id-1439555806236-83":{"width":"91px","top":"137px","left":"116px","min-height":"91px"},"silex-id-1439555806132-82":{"width":"90px","top":"140px","left":"732px","min-height":"78.6792px"},"silex-id-1439555806030-81":{"width":"265px","top":"258px","left":"360px","background-color":"transparent","min-height":"190px"},"silex-id-1439555805927-80":{"width":"302px","top":"257px","left":"647px","background-color":"transparent","min-height":"190px"},"silex-id-1439555805825-79":{"width":"980px","top":"468px","left":"510px","background-color":"transparent","min-height":"1193px"},"silex-id-1439555805723-78":{"width":"418px","top":"58px","left":"29px","background-color":"transparent","min-height":"1287px"},"silex-id-1439555805622-77":{"width":"242px","top":"394px","left":"564px","background-color":"rgb(43, 148, 126)","border-top-left-radius":"5px","border-top-right-radius":"5px","border-bottom-right-radius":"5px","border-bottom-left-radius":"5px","min-height":"46px"},"silex-id-1439555805518-76":{"width":"215px","top":"12px","left":"14px","background-color":"transparent","min-height":"20px"},"silex-id-1439555805416-75":{"width":"487.309px","top":"59px","left":"457px","min-height":"303px"},"silex-id-1439555805314-74":{"width":"495.52px","top":"481px","left":"214px","min-height":"152px"},"silex-id-1439555805211-73":{"width":"448px","top":"484px","left":"477px","background-color":"transparent","min-height":"309px"},"silex-id-1439555805111-72":{"width":"400px","top":"954px","left":"491px","background-color":"transparent","min-height":"53px"},"silex-id-1439555804907-70":{"width":"215px","top":"11px","left":"14px","background-color":"transparent","min-height":"28px"},"silex-id-1439555804395-65":{"width":"21px","top":"10px","left":"466px","opacity":"0.8","min-height":"19px"},"silex-id-1439555804293-64":{"width":"25px","top":"7px","left":"424px","opacity":"0.8","min-height":"25px"},"silex-id-1439555804192-63":{"width":"13.3333px","top":"9px","left":"386px","opacity":"0.8","min-height":"22px"},"silex-id-1439555803858-60":{"width":"945px","top":"26px","left":"-1px","background-color":"transparent","min-height":"47px"},"silex-id-1439555803757-59":{"width":"150px","top":"15px","left":"471px","background-color":"transparent","min-height":"22px"},"silex-id-1439555803655-58":{"width":"150px","top":"15px","left":"636px","background-color":"transparent","min-height":"23px"},"silex-id-1439555803551-57":{"width":"150px","top":"15px","left":"794px","background-color":"transparent","min-height":"23px"},"silex-id-1439555803447-56":{"width":"242px","top":"371px","left":"347px","background-color":"rgb(43, 148, 126)","border-top-left-radius":"5px","border-top-right-radius":"5px","border-bottom-right-radius":"5px","border-bottom-left-radius":"5px","min-height":"46px"},"silex-id-1439555803309-55":{"width":"215px","top":"13px","left":"13px","background-color":"transparent","min-height":"33px"},"silex-id-1439555803032-54":{"width":"945px","top":"213px","left":"0px","background-color":"transparent","min-height":"87px"},"silex-id-1439555802805-52":{"width":"855px","top":"61px","left":"43px","background-color":"transparent","min-height":"55px"},"silex-id-1484951384736-0":{"min-height":"566px","background-color":"transparent","width":"945px","top":"15px","left":"304px"},"silex-id-1484951384737-1":{"top":"5px","left":"5px","background-image":"url('../../../../../libs/templates/silex-templates/online-service/assets/background_header.jpg')","background-position":"center right","min-width":"945px","background-size":"cover","background-repeat":"no-repeat","background-color":"rgba(65,73,96,1)","background-attachment":"scroll"},"silex-id-1484951659147-2":{"min-height":"100px","background-color":"transparent"},"silex-id-1484951794946-4":{"min-height":"1489px","background-color":"transparent"},"silex-id-1484951794946-5":{"top":"606px","left":"5px","background-color":"rgba(103,37,62,1)"},"silex-id-1484951945204-6":{"min-height":"507px","background-color":"transparent"},"silex-id-1484951945204-7":{"top":"1996px","left":"5px","background-color":"rgba(65,73,96,1)"},"silex-id-1484952021003-8":{"min-height":"131px","background-color":"transparent"},"silex-id-1484952021004-9":{"top":"2426px","left":"5px","background-color":"rgba(0,0,0,1)"},"silex-id-1484952760463-10":{"min-height":"585px","background-color":"transparent"},"silex-id-1484952760464-11":{"min-height":"100px","top":"439px","left":"0px"},"silex-id-1484952775498-12":{"min-height":"288px","width":"877px","top":"58px","left":"33px"},"silex-id-1492777118376-4":{"width":"","background-color":"","min-height":"37px"},"silex-id-1492777224370-7":{"width":"46px","min-height":"168px","background-color":"transparent","top":"217px","left":"0px"},"silex-id-1535371935324-0":{"width":"387px","min-height":"58px","top":"-6px","left":"13px"},"silex-id-1536710073242-1":{"width":"439px","height":"403px","background-color":"transparent","top":"1021px","left":"475px"}},"mobile":{"silex-id-1484951794946-5":{"top":"535px","left":"0px"},"silex-id-1484951794946-4":{"min-height":"1689px"},"silex-id-1439555805723-78":{"top":"29px","left":"23px","width":"400px","min-height":"119px"},"silex-id-1484951384736-0":{"min-height":"302px","top":"168px","left":"12px","width":"445px"},"silex-id-1439555803032-54":{"top":"61px","left":"11px","width":"423px","min-height":"52px"},"silex-id-1439555803447-56":{"top":"496px","left":"11px","width":"423px","min-height":"46px"},"silex-id-1439555803309-55":{"top":"13px","left":"104px","width":"215px","min-height":"20px"},"silex-id-1492777224370-7":{"top":"0px","left":"178px","width":"113px","min-height":"95px"},"silex-id-1484951384737-1":{"background-image":""},"silex-id-1439555805314-74":{"top":"697px","left":"11px","width":"423px","min-height":"123px"},"silex-id-1439555805927-80":{"top":"363px","left":"13px","width":"302px","min-height":"152px"},"silex-id-1439555806030-81":{"top":"173px","left":"158px","width":"265px","min-height":"164px"},"silex-id-1484951945204-7":{"top":"2052px","left":"0px"},"silex-id-1484951945204-6":{"min-height":"676px"},"silex-id-1439555805416-75":{"top":"36px","left":"11px","width":"423px","min-height":"248px"}},"prodotypeData":{"component":{"silex-id-1492777224370-7":{"name":"share1","templateName":"share","networks":["Facebook","Twitter","Google+",""],"style":"Flat Web Icon Set - Inverted","description":"Your site description"},"silex-id-1536710073242-1":{"name":"form1","templateName":"form","sendTo":"","submitButtonLabel":"Send Prayer Request","buttonTextColor":"#ffffff","buttonBackgroundColor":"#33131f","label1":"Person we will join you in prayer for:","placeholder1":"First Name","label2":"City they live:","placeholder2":"City, State","label3":"Tell us a little about it","placeholder3":"What are they struggling with?","labelTextColor":"#c0c0c0"}},"style":{}}}]</script>
+
+    
+
+
+
+
+    <meta name="website-width" content="945">
+    <style type="text/css" class="silex-style-settings">.website-width {width: 945px;}</style>
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove --></head>
+
+<body class="silex-id-1439555806958-90 enable-mobile silex-runtime" data-silex-type="container" data-silex-id="silex-id-1439555806958-90">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="silex-pages">
+        <div data-silex-type="image" data-silex-id="silex-id-hamburger-menu" class="menu-button editable-style silex-id-hamburger-menu image-element page-page-1 paged-element prevent-draggable prevent-resizable hide-on-mobile"><img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content"></div><a id="page-use-backnode" data-silex-type="page" class="page-element">Use Backnode</a><a class="page-element" data-silex-type="page" id="page-documentation">Documentation</a><a class="page-element" data-silex-type="page" id="page-learn-backnode">Learn Backnode</a></div>
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484951384737-1 section-element" data-silex-id="silex-id-1484951384737-1">
+
+
+
+
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484951384736-0 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484951384736-0"><div class="editable-style text-element silex-id-1439555803032-54" data-silex-type="text" data-silex-id="silex-id-1439555803032-54" style="">
+                <div class="silex-element-content normal"><div style="text-align: center;"><b><span style="font-family: trebuchet ms, sans-serif;"><font size="6">I love addicts, I love you.</font></span></b></div><div style="text-align: center;"><b><span style="font-family: trebuchet ms, sans-serif;"><font size="6">&amp; I choose to stand in the gap.</font></span></b><br></div></div>
+            </div>
+
+
+            <div class="editable-style container-element nav silex-id-1439555803858-60 hide-on-mobile" data-silex-type="container" data-silex-id="silex-id-1439555803858-60">
+
+
+
+                
+                <div class="editable-style text-element silex-id-1439555803757-59" data-silex-type="text" data-silex-id="silex-id-1439555803757-59">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><a class="page-link-active" href="#!page-use-backnode">Use Backnode</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="editable-style text-element silex-id-1439555803655-58" data-silex-type="text" data-silex-id="silex-id-1439555803655-58">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><a class="" href="#!page-documentation">Documentation</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="editable-style text-element silex-id-1439555803551-57" data-silex-type="text" data-silex-id="silex-id-1439555803551-57">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><a class="" href="#!page-learn-backnode">Learn Backnode</a>
+                        </div>
+                    </div>
+                </div>
+            <div data-silex-type="text" class="editable-style silex-id-1535371935324-0 text-element page-use-backnode paged-element" data-silex-id="silex-id-1535371935324-0" style=""><div class="silex-element-content normal"><b><font size="6">#journey</font></b></div></div></div>
+
+            
+            
+        <div class="editable-style container-element silex-id-1439555803447-56" data-silex-type="container" data-silex-id="silex-id-1439555803447-56" data-silex-href="#!page-documentation" style="">
+                <div class="editable-style text-element silex-id-1439555803309-55" data-silex-type="text" data-silex-id="silex-id-1439555803309-55">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">HELP OUR MISSION<br></span>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="editable-style image-element silex-id-1439555805314-74" data-silex-type="image" data-silex-id="silex-id-1439555805314-74" style=""><img class="silex-element-content" src="../../../../../libs/templates/silex-templates/online-service/assets/howitworks.png">
+            </div></div>
+        <div data-silex-type="html" class="editable-style silex-id-1492777224370-7 html-element silex-component page-use-backnode paged-element paged-element-visible" data-silex-id="silex-id-1492777224370-7">
+            <div class="silex-element-content">
+                <ul class="share-buttons" id="id_1495974873542_249">
+
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com&amp;t=Your%20site%20title" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" data-silex-static="" src="https://editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/inverted/Facebook.png"></a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://twitter.com/intent/tweet?source=http://yoursite.com&amp;text=Your%20site%20title:%20http://yoursite.com&amp;via=silexlabs" target="_blank" title="Share on Twitter"><img alt="Twitt" data-silex-static="" src="https://editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/inverted/Twitter.png"></a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://plus.google.com/share?url=http://yoursite.com" target="_blank" title="Share on Google+"><img alt="Share on Google+" data-silex-static="" src="https://editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/inverted/Google%2B.png"></a>
+                    </li>
+
+
+
+
+
+
+
+
+
+                </ul>
+
+                <style type="text/css">#id_1495974873542_249.share-buttons {list-style: none; padding: 0;}#id_1495974873542_249.share-buttons li {display: inline;}#id_1495974873542_249.share-buttons .sr-only {position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;}</style>
+            </div>
+        </div>
+
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484951794946-5 section-element page-use-backnode paged-element" data-silex-id="silex-id-1484951794946-5">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484951794946-4 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484951794946-4">
+
+
+            
+            <div class="editable-style text-element silex-id-1439555805723-78" data-silex-type="text" data-silex-id="silex-id-1439555805723-78">
+                <div class="silex-element-content normal">
+                    <h3 class="heading3"></h3>
+                    <h1 class="heading1">
+                        <span style="font-family: Days One;"><b><font color="#000000">The Mission:</font></b></span>
+                    </h1>
+                    <p class="normal">
+                        <b><font style="color: rgb(255, 255, 255);" color="#000000"><span style="font-size: 11pt; font-family: Calibri; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;" id="docs-internal-guid-38b3ac25-7fff-6774-fa20-9a9b7313ff21">Mission Goal:</span><span style="font-size: 11pt; font-family: Calibri; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"> Supporting those who aren’t able to support themselves. &nbsp;Giving selflessly.  Doing more than we are asked.  Fighting for those who are in a dark place in their life and need someone else to fight for them. &nbsp;Helping brothers and sisters who are impacted by the effects of substance abuse and haven’t found their way just yet.</span></font></b></p><p class="normal"><font color="#000000"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><br></span></font></p><p dir="ltr" style="line-height:1.295;margin-top:0pt;margin-bottom:8pt;text-align: center;" id="docs-internal-guid-d893870e-7fff-2f3f-3cf6-cc754f937233"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"></span></p><p dir="ltr" style="line-height:1.295;margin-top:0pt;margin-bottom:8pt;"><span style="font-size: 11pt; font-family: Calibri; color: rgb(192, 192, 192); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">I know what it means to be<span style="color: rgb(192, 192, 192);"> with someone </span>who is addicted to something that can transform who they are in front of your very eyes. &nbsp;Several people I love have had struggles with different types of substances.  Also, my body became addicted to Vyvanse, an ADHD medication, for about a year and a half.  Only the taking the prescribed dose my <span style="color: rgb(192, 192, 192);">doctor gave me.  I </span>know the ability for something to grab a hold of you so quickly and transform you. &nbsp;That it can change the way you respond to people &amp; situations.  It literally was controlling my actions.  I would catch myself thinking, why are you acting like this or getting upset over this?  It was changing me &amp; it was eye opening to realize and gain an understanding of things.  My own experience gave me a insight to the struggle other people go through.  I am mentally strong and pay attention to my body.  I was able to notice the changes it was causing in myself.  I don’t know if others are able to do so or if they have someone who is able to recognize and be honest with them about what they are dealing with. </span></p><p dir="ltr" style="line-height:1.295;margin-top:0pt;margin-bottom:8pt;"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span style="color: rgb(192, 192, 192);">Most individuals have some type of addiction. &nbsp;Yes, possibly even you.</span></span></p><p dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt; color: rgb(192, 192, 192);"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span style="color: rgb(192, 192, 192);">What’s your drug of choice? &nbsp;Sugar, medication, money, alcohol, food, sex, gambling, working out, spoiling your children, video games, hunting/fishing, shopping, caffeine/coffee, crack, extreme sports, this list goes on…</span></span></p><p dir="ltr" style="line-height:1.295;margin-top:0pt;margin-bottom:8pt;"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span style="color: rgb(192, 192, 192);">The truth is some have greater negative consequences than others, however, it is the same struggle when it comes down to it. &nbsp;If your body goes through withdraws of anything it has gained an attachment or addiction to it.  Call it what you want.  The chemistry in your brain is fueled by these things and how they make you feel.  They all lead us to a direction of depending on other objects, people, statuses, etc. more than we should. &nbsp;Our bodies begin to make adjustments for everything we put into it.  This is why it’s so important to feed your body, mind and soul with positive things.</span></span></p><p dir="ltr" style="line-height: 1.295; margin-top: 0pt; margin-bottom: 8pt; color: rgb(192, 192, 192);"><span style="font-size: 11pt; font-family: Calibri; color: rgb(192, 192, 192); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Our desire <span style="color: rgb(192, 192, 192);">is to assist people in finding o</span>utlets to cope with these things as they working to get back to themselves without enabling them to continue destructive lifestyles.  We will achieve this by building a mental health facility in our community.  It will have a gym, a yoga studio, an art studio, a children's activity center, parent education rooms, rooms to assist Veterans with PTSD, rooms to hold Al-anon meetings, and nutrition counseling rooms.  All of these will allow people in our community the outlets to be educated and also have the facilities to put these things into action in their lives.</span><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">  <span style="color: rgb(192, 192, 192);">It is very misunderstood and also </span><span style="color: rgb(192, 192, 192);">something that is avoided.  It affects all races, social statuses &amp; gender.  It is a very real &amp; large problem in our communities coast to coast.  </span></span></p><p dir="ltr" style="line-height:1.295;margin-top:0pt;margin-bottom:8pt;"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span style="color: rgb(192, 192, 192);">We appreciate your consideration to join this mission in whatever way possible. &nbsp;We have a desire to work with those who support our goals as well! ☺</span></span></p><p dir="ltr" style="line-height:1.295;margin-top:0pt;margin-bottom:8pt;"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><br></span></p><p dir="ltr" style="line-height:1.295;margin-top:0pt;margin-bottom:8pt;"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span style="color: rgb(192, 192, 192);">Do you choose to stand in the gap with us or are you already standing in the gap for someone you love?  Please let us support your efforts if you already are.  Prayer is very powerful and we would like to join you.  Complete the prayer request and we will add you to our mission of assisting others in healing.  </span><br></span></p><p class="normal"><font color="#000000"><span style="font-size:11pt;font-family:Calibri;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"></span>&nbsp;
+                        </font>
+                    </p>
+                    <br>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            
+        <div class="editable-style image-element silex-id-1439555805416-75" data-silex-type="image" data-silex-id="silex-id-1439555805416-75" style=""><img class="silex-element-content" src="../../../../../libs/templates/silex-templates/online-service/assets/editing_tool.png">
+            </div><div class="editable-style container-element silex-id-1439555805622-77" data-silex-type="container" data-silex-id="silex-id-1439555805622-77" data-silex-href="#!page-documentation" style="">
+                
+            <div class="editable-style text-element silex-id-1439555805518-76" data-silex-type="text" data-silex-id="silex-id-1439555805518-76" style="">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="color: rgb(255, 255, 255);"></span></div><div style="text-align: center;"><span style="color: rgb(255, 255, 255);">STAND IN THE GAP<br></span></div>
+                    </div>
+                </div></div><div class="editable-style text-element silex-id-1439555805211-73" data-silex-type="text" data-silex-id="silex-id-1439555805211-73" style="">
+                <div class="silex-element-content normal">
+                    <div><br></div><div style="color: rgb(0, 0, 0);"><b><font size="6">Words are powerful...</font></b><br></div><h1 class="heading1"><font size="4" color="#000000">Are you already or would you like to help stand in the gap for someone you love?</font></h1><div><br></div>
+                    <div><font color="#000000">Please submit a prayer request for you or your loved one they will be added to our teams prayers, <br></font></div><div><font color="#000000">order a shirt to show your support, make a donation to contribute to our cause, <br></font></div><div><font color="#000000">or pause now and say a prayer for us that we will be successful in our mission.</font></div>
+                </div>
+            </div><div data-silex-type="html" class="editable-style silex-id-1536710073242-1 html-element silex-component silex-component-form silex-use-height-not-minheight" data-silex-id="silex-id-1536710073242-1" style=""><div class="silex-element-content"><form id="id_1536720790976_124" action="https://formspree.io/" method="POST">
+  
+  <div>
+    <label for="field1">Person we will join you in prayer for:</label>
+    <input required="" id="field1" name="field1" placeholder="First Name" type="text">
+  </div>
+  
+  
+  <div>
+    <label for="field2">City they live:</label>
+    <input required="" id="field2" name="field2" placeholder="City, State" type="text">
+  </div>
+  
+  
+  <div class="fill-vertical">
+    <label for="field3">Tell us a little about it</label>
+    <textarea required="" id="field3" name="field3" placeholder="What are they struggling with?"></textarea>
+  </div>
+  
+  <input value="Send Prayer Request" type="submit">
+</form>
+<style>#id_1536720790976_124 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1536720790976_124 input[type=submit] {width: 100%; background-color: #33131f; color: #ffffff; padding: 14px 20px; margin: 8px 0; border: 1px solid #4CAF50; border-radius: 3px; cursor: pointer;}#id_1536720790976_124 label {color: #c0c0c0;}#id_1536720790976_124 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1536720790976_124 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1536720790976_124 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
+
+</div></div><div class="editable-style text-element silex-id-1439555805111-72" data-silex-type="text" data-silex-id="silex-id-1439555805111-72" style="">
+                <div class="silex-element-content normal">
+                    <h1 style="text-align: center; color: rgb(0, 0, 255);" class="heading1"><span style="font-family: Days One;"><b><span style="color: rgb(0, 0, 0);">Prayer Request:</span></b></span><br></h1>
+                </div>
+            </div></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484952760464-11 section-element page-documentation paged-element page-learn-backnode paged-element-hidden" data-silex-id="silex-id-1484952760464-11">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484952760463-10 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484952760463-10">
+            <div data-silex-type="text" class="editable-style silex-id-1484952775498-12 text-element" data-silex-id="silex-id-1484952775498-12">
+                <div class="silex-element-content normal">
+                    <font color="#000000">Waiting for your content here...</font>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484951945204-7 section-element" data-silex-id="silex-id-1484951945204-7">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484951945204-6 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484951945204-6">
+            <div class="editable-style text-element silex-id-1439555806543-86" data-silex-type="text" data-silex-id="silex-id-1439555806543-86">
+                <div class="silex-element-content normal">
+                    <h1 style="text-align: center;" class="heading1">Join a great community</h1>
+                </div>
+            </div>
+            <div class="editable-style text-element silex-id-1439555806441-85" data-silex-type="text" data-silex-id="silex-id-1439555806441-85">
+                <div class="silex-element-content normal">
+                    <h2 style="text-align: center;" class="heading2">A free tool</h2>
+                    <p style="text-align: center;" class="normal">This open source CMS can be use by everyone, free of charge.</p>
+                </div>
+            </div>
+            <div class="editable-style image-element silex-id-1439555806339-84" data-silex-type="image" data-silex-id="silex-id-1439555806339-84"><img class="silex-element-content" src="../../../../../libs/templates/silex-templates/online-service/assets/picto2.png">
+            </div>
+            <div class="editable-style image-element silex-id-1439555806236-83" data-silex-type="image" data-silex-id="silex-id-1439555806236-83"><img class="silex-element-content" src="../../../../../libs/templates/silex-templates/online-service/assets/picto1.png">
+            </div>
+
+            <div class="editable-style text-element silex-id-1439555806030-81" data-silex-type="text" data-silex-id="silex-id-1439555806030-81">
+                <div class="silex-element-content normal">
+                    <h2 style="text-align: center;" class="heading2">Discover our community<br></h2>
+                    <p style="text-align: center;" class="normal">Developers, Designers and users create a community. They help themselves always with goodwill and happiness</p>
+                </div>
+            </div>
+            <div class="editable-style text-element silex-id-1439555805927-80" data-silex-type="text" data-silex-id="silex-id-1439555805927-80">
+                <div class="silex-element-content normal">
+                    <h2 style="text-align: center;" class="heading2">Grow up the tool<br></h2>
+                    <p style="text-align: center;" class="normal">Thanks to all the people, the tool is always in progress for a best rendering day after day</p>
+                </div>
+            </div>
+            <div class="editable-style image-element silex-id-1439555806132-82" data-silex-type="image" data-silex-id="silex-id-1439555806132-82"><img class="silex-element-content" src="../../../../../libs/templates/silex-templates/online-service/assets/picto3.png">
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484952021004-9 section-element" data-silex-id="silex-id-1484952021004-9">
+        <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1484952021003-8 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1484952021003-8">
+            
+        <div data-silex-type="text" class="editable-style text-element silex-id-1439555802805-52" data-silex-id="silex-id-1439555802805-52" style="">
+                <div class="silex-element-content normal">
+                    <p class="normal"></p>
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255);">Journey Enterprises</span></div><p class="normal"></p>
+                </div>
+            </div></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
